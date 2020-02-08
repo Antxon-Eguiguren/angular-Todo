@@ -21,6 +21,8 @@ export class FormularioComponent implements OnInit {
 
   manejarClick() {
     this.tareaEnviada.emit(this.tarea);
+    this.tarea.titulo = '';
+    this.tarea.texto = '';
   }
 
 }

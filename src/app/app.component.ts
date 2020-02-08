@@ -22,8 +22,7 @@ export class AppComponent {
     // this.arrTareas.push(nuevaTarea);
 
     // FORMA DE HACERLO CON SPREAD OPERATOR (para que no apunte todo el tiempo al mismo objeto y se quede con el último valor todo el rato)
-    const nuevaTarea = { ...$event };
-    this.arrTareas.push(nuevaTarea);
+    this.arrTareas.push({ ...$event });
   }
 
 }
